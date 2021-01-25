@@ -5,7 +5,7 @@ import Footer from '@components/Footer';
 const Home = (): JSX.Element => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" description="Seja bem vindo a página Rodrigo Godoy Dev, aqui você encontra todo tipo de conteúdo dentro do REACT" />
       <Nav />
       <div className="container mx-auto flex">
         <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">

@@ -37,7 +37,7 @@ const Nav = () => {
   // };
 
   return (
-    <nav className="dark.bg-gray-800 bg-white">
+    <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -56,7 +56,7 @@ const Nav = () => {
               <img className="block lg:hidden h-8 w-auto rounded-full" src="/rodrigogodoy.png" alt="Rodrigo Godoy Dev" />
               <div className="hidden lg:flex items-center">
                 <img className="h-8 w-auto rounded-full mr-5" src="/rodrigogodoy.png" alt="Rodrigo Godoy Dev" />
-                <span className="dark.text-white text-black">Rodrigo Godoy Dev</span>
+                <span className="text-white">Rodrigo Godoy Dev</span>
               </div>
             </div>
             <div className="hidden sm:block sm:ml-6">
