@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, image, shouldExcludeTitleSuffix = false, shouldIndexPage = true }: SEOProps) => {
-  const pageTitle = `${title} ${!shouldExcludeTitleSuffix ? ' | Rodrigo Godoy Dev' : ''}`;
+  const pageTitle = `${title} ${!shouldExcludeTitleSuffix ? ' | Rodrigo Godoy' : ''}`;
   const pageImage = image ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}`: null;
   return (
     <Head>
@@ -21,6 +21,11 @@ const SEO = ({ title, description, image, shouldExcludeTitleSuffix = false, shou
       { !shouldIndexPage && <meta name="robots" content="noindex,nofollow" />}
 
       <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
+      />
+      <link rel="manifest" href="/manifest.json" />
       <meta name="MobileOptimized" content="320" />
       <meta name="HandheldFriendly" content="True" />
       <meta name="theme-color" content="#121214" />

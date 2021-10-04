@@ -8,8 +8,13 @@ module.exports = {
       'mono': ['Menlo, monospace']
     }
   },
-  variants: {
-    extend: {},
+  variants: {},
+  theme: {
+    extend: {
+      colors: {
+        primary: '#DAA600'
+      }
+    },
   },
   plugins: [],
 }
